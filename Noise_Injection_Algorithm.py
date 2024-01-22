@@ -182,27 +182,26 @@ def Injection_Algorithm (noise_regions_path1 = 'Sample_Microscope_Regions',
 
     # Microscope-based Augmentation
     # if you want to heavy augment your dataset, then repeat this loop more times e.g. put n_augm = 4
-    # n_augm = 1
-    # n_it = 0
-    # while n_it < n_augm:
-    #     n_it+=1
-    #     for c_im in case_images:
-    #                 # Random Sample from Sample_Microscope_Regions
-    #                 n_r = noise_regions1[rn.randint(0,len(noise_regions1)-1)]
-    #                 n_r_path = os.path.join(noise_regions_path1,n_r)
-    #                 n_r_img = np.array(Image.open(n_r_path).convert('RGB'))
+    n_augm = 1
+    n_it = 0
+    while n_it < n_augm:
+        n_it+=1
+        for c_im in case_images:
+                    # Random Sample from Sample_Microscope_Regions
+                    n_r = noise_regions1[rn.randint(0,len(noise_regions1)-1)]
+                    n_r_path = os.path.join(noise_regions_path1,n_r)
+                    n_r_img = np.array(Image.open(n_r_path).convert('RGB'))
 
-    #                 # load case image
-    #                 c_im_path = os.path.join(case_images_path,c_im)
-    #                 c_img = np.array(Image.open(c_im_path).convert('RGB'))
+                    # load case image
+                    c_im_path = os.path.join(case_images_path,c_im)
+                    c_img = np.array(Image.open(c_im_path).convert('RGB'))
 
-    #                 where = np.argwhere(n_r_img!=255)    
-    #                 for v in where:
-    #                     _v = v
-    #                     c_img[_v[0], _v[1], _v[2]] = n_r_img[_v[0], _v[1], _v[2]]
+                    where = np.argwhere(n_r_img!=255)    
+                    for _v in where:
+                        c_img[_v[0], _v[1], _v[2]] = n_r_img[_v[0], _v[1], _v[2]]
 
-    #                 c_img = Image.fromarray(c_img.astype('uint8'), 'RGB')
-    #                 c_img.save(os.path.join(dist_path, str(n_it)+'_me_'+ c_im))
+                    c_img = Image.fromarray(c_img.astype('uint8'), 'RGB')
+                    c_img.save(os.path.join(dist_path, str(n_it)+'_me_'+ c_im))
 
     # Hair-based Augmentation
     # if you want to heavy augment your dataset, then repeat this loop more times e.g. put n_augm = 5
@@ -211,7 +210,7 @@ def Injection_Algorithm (noise_regions_path1 = 'Sample_Microscope_Regions',
     while n_it < n_augm:
         n_it+=1
         for c_im in case_images:
-                    # Random Sample from Sample_Microscope_Regions
+                    # Random Sample from Sample_Hair_Regions
                     n_r = noise_regions2[rn.randint(0,len(noise_regions2)-1)]
                     n_r_path = os.path.join(noise_regions_path2,n_r)
                     n_r_img = np.array(Image.open(n_r_path).convert('RGB'))
@@ -226,12 +225,7 @@ def Injection_Algorithm (noise_regions_path1 = 'Sample_Microscope_Regions',
                     c_img = c_img.astype('float32')
                     n_r_img = n_r_img.astype('float32')
                     where = np.argwhere(n_r_img!=255)    
-                    for v in where:
-                        _v = v
-                        #c_img[_v[0], _v[1], _v[2]] = ((n_r_img[_v[0], _v[1], _v[2]] + c_img[_v[0], _v[1], _v[2]])/2)*2
-
-                        #c_img_new[_v[0], _v[1], _v[2]] = n_r_img[_v[0], _v[1], _v[2]]*0.5 + c_img[_v[0], _v[1], _v[2]]*0.5
-
+                    for _v in where:
                         c_img_new[_v[0], _v[1], _v[2]] = n_r_img[_v[0], _v[1], _v[2]]*0.75 + mn_rgb[_v[2]]*0.25 
 
                     c_img_new = Image.fromarray(c_img_new.astype('uint8'), 'RGB')
@@ -242,6 +236,3 @@ def Injection_Algorithm (noise_regions_path1 = 'Sample_Microscope_Regions',
 # Craft_Microscope_Effect()
 # Craft_Hair_Effect()
 Injection_Algorithm() 
-
-
-
