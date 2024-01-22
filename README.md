@@ -8,6 +8,7 @@ This Algorithm can be used for simulating and injecting realistic Microscope and
 
 ![Fig 3](https://github.com/EmmanuelPintelas/Skin-Cancer-Hair-Microscope-Augmentation-Framework/assets/68348589/5359a88b-e9a3-4f36-bc10-a7267b44dd37)
 
+![Fig 4](https://github.com/EmmanuelPintelas/Skin-Cancer-Hair-Microscope-Augmentation-Framework/assets/68348589/da0c1613-b61c-466e-aaf6-e8f98d29cd23)
 
 
     Instructions to use:
