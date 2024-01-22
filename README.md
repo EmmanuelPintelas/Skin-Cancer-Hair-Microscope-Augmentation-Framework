@@ -1,4 +1,4 @@
-# Skin-Cancer---Hair-Microscope---Augmentation-Framework
+# Skin Cancer - Hair-Microscope - Augmentation Framework
 
 The main challenge in Skin-Cancer detection problem, is lying on adressing the unstable learning state due to the high noise ratio. 
 Common types of noise found in Skin-Cancer images which downgrade the CNNs' learning efficacy involves the Microscope and Hair artifacts.
