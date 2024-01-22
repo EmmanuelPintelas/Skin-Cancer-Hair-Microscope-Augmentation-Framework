@@ -5,7 +5,8 @@ Common types of noise found in Skin-Cancer images which downgrade the CNNs' lear
 
 This Algorithm can be used for simulating and injecting realistic Microscope and Hair artifacts for image Augmentation to enhance Skin Cancer diagnosis tasks.
 
-![Εικόνα2](https://github.com/EmmanuelPintelas/Skin-Cancer-Hair-Microscope-Augmentation-Framework/assets/68348589/cc92d7bd-b3ed-4f5c-b880-d79d4a232784)
+
+![Fig 3](https://github.com/EmmanuelPintelas/Skin-Cancer-Hair-Microscope-Augmentation-Framework/assets/68348589/5359a88b-e9a3-4f36-bc10-a7267b44dd37)
 
 
 
@@ -24,3 +25,6 @@ This Algorithm can be used for simulating and injecting realistic Microscope and
     4th - Now, you can use the Sample_Microscope_Regions and Sample_Hair_Regions via the _Injection_Algorithm_, 
     which will fuse the segmented Noise_Regions into new case images, 
     in order to perform image augmentation for Skin-Cancer tasks.
+
+
+    ![Εικόνα2](https://github.com/EmmanuelPintelas/Skin-Cancer-Hair-Microscope-Augmentation-Framework/assets/68348589/cc92d7bd-b3ed-4f5c-b880-d79d4a232784)
