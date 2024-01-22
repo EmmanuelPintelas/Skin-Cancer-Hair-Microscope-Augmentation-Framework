@@ -1,5 +1,10 @@
 # Skin-Cancer---Hair-Microscope---Augmentation-Framework
-This Algorithm can be used for simulating and injecting realistic microscope and hair artifacts for image Augmentation in Skin Cancer detection tasks
+
+The main challenge in Skin-Cancer detection problem, is lying on adressing the unstable learning state due to the high noise ratio. 
+Common types of noise found in Skin-Cancer images which downgrade the CNNs' learning efficacy involves Microscope and Hair artifacts [].
+
+
+This Algorithm can be used for simulating and injecting realistic Microscope and Hair artifacts for image Augmentation to enhance Skin Cancer diagnosis tasks
 
 
     Instructions to use:
