@@ -26,5 +26,3 @@ This Algorithm can be used for simulating and injecting realistic Microscope and
     which will fuse the segmented Noise_Regions into new case images, 
     in order to perform image augmentation for Skin-Cancer tasks.
 
-
-![Εικόνα2](https://github.com/EmmanuelPintelas/Skin-Cancer-Hair-Microscope-Augmentation-Framework/assets/68348589/cc92d7bd-b3ed-4f5c-b880-d79d4a232784)
