@@ -2,8 +2,10 @@
 
 The main challenge in Skin Cancer detection problem, is lying on adressing the unstable learning state due to the high noise ratio. 
 Common types of noise found in Skin-Cancer images which downgrade the CNNs' learning efficacy involves the Microscope and Hair artifacts.
+![Εικόνα2](https://github.com/EmmanuelPintelas/Skin-Cancer-Hair-Microscope-Augmentation-Framework/assets/68348589/cc92d7bd-b3ed-4f5c-b880-d79d4a232784)
 
 This Algorithm can be used for simulating and injecting realistic Microscope and Hair artifacts for image Augmentation to enhance Skin Cancer diagnosis tasks.
+
 
 
     Instructions to use:
